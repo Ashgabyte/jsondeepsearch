@@ -7,17 +7,15 @@ Recursive deep search for keys or values in JSON structured nested and mixed pyt
 
 ## functions:
 
-``` **lookforkey(jsondict, key)** ```
+``` lookforkey(jsondict, key) ```
 
 Search the key in dictionary. The key is a string in quotes like "key".
 
-Returns a tuple with a dict (last match: {key:value}) and a list (all matches: [key, value, absolute index including original dictionary name])) 
+Returns a tuple with a dict (last match: {key:value}) and a list (all matches: [key, value, original dictionary name with absolute index])) 
 
-``` **lookforvalue(jsondict, value)** ```
+``` lookforvalue(jsondict, value) ```
 
-Search the value in dictionary.
+Search the value in dictionary. The value can be any type of variables, sequences or mixed structure. For single values of array the dict is empty (no pairs "key":"value", but only "value")
 
-The value can be any type of variables, sequences or mixed structure.
+Returns a tuple with of two: a dict (last match: {key: value}) and a list (all matches: [key, value, original dictionary name with absolute index]) 
 
-Returns a tuple with of two: a dict (last match: {key: value}) and a list (all matches: [key, value, absolute index including original dictionary name]) 
-For single values of array the dict is empty (no pairs "key":"value", but only "value")
