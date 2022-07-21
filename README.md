@@ -22,6 +22,8 @@ For single values of array the dict is empty (no pairs {key: value}, but only "v
 
 > Do not use expression as first parameter by calling these functions, use only names of dictionaries.
 
+Example of using:
+
 1) Read JSON file and convert it to dict: 
 ```
 import json
@@ -31,7 +33,7 @@ myjson = json.loads(mytext)
 myfile.close()
 ```
 
-Then call functions
+2) Then call functions:
 ```
 import 
 result = lookforkey(myjson, "any")
