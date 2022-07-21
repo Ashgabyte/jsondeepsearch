@@ -36,7 +36,22 @@ myfile.close()
 2) Then call functions:
 ```
 import 
+mykey = "name" # OR
+mykey = "uuid"
 result = lookforkey(myjson, "any")
-result = lookforvalue(myjson, *any*)
+# result[0] - a dict with pair {key:value} - last natch
+# result[1] - a list with [key, value, index] - all matches
 ```
 
+```
+import 
+myvalue = "Max" # OR
+myvalue = 123 # OR
+myvalue = [0, 10, 20] # OR
+myvalue = {'properties':{'length': 20, 'width': 10, 'height': 5}} # OR
+myvalue = (36.6, 97.88) # OR
+myvalue = {'array':[1, 2, 3]}
+result = lookforvalue(myjson, myvalue)
+# result[0] - a dict with pair {key:value} - last natch
+# result[1] - a list with [key, value, index] - all matches
+```
