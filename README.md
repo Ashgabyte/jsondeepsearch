@@ -21,3 +21,4 @@ Returns a tuple with of two: a ```dict``` (last match: {key: value}) and a ```li
 For single values of array the dict is empty (no pairs "key":"value", but only "value")
 
 > Do not use expressions as parameters by calling the following functions, use only names of variables, dictionaries, lists and tuples
+
