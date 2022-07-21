@@ -18,7 +18,7 @@ Returns a tuple of two: a ```dict``` (last match: ```{key:value}```) and a ```li
 Search the value in dictionary. The value can be any type of variables, sequences or mixed structure. 
 
 Returns a tuple of two: a ```dict``` (last match: ```{key: value}```) and a ```list``` (all matches: ```[key, value, original dict name with absolute indexes]```). 
-For single values of array the dict is empty (no pairs {key: value}, but only "value")
+For single values of array the dict is empty (no pairs {key: value}, but only found values in a list)
 
 > Do not use expression as first parameter by calling these functions, use only names of dictionaries.
 
