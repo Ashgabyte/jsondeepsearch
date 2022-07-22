@@ -38,8 +38,8 @@ myfile.close()
 import 
 mykey = "name" # OR
 mykey = "uuid"
-result = lookforkey(myjson, "any")
-# result[0] - a dict with pair {key:value} - last natch
+result = lookforkey(myjson, mykey)
+# result[0] - a dict with pair {key:value} - last match
 # result[1] - a list with [key, value, index] - all matches
 ```
 
@@ -52,6 +52,6 @@ myvalue = {'properties':{'length': 20, 'width': 10, 'height': 5}} # OR
 myvalue = (36.6, 97.88) # OR
 myvalue = {'array':[1, 2, 3]}
 result = lookforvalue(myjson, myvalue)
-# result[0] - a dict with pair {key:value} - last natch
+# result[0] - a dict with pair {key:value} - last match
 # result[1] - a list with [key, value, index] - all matches
 ```
